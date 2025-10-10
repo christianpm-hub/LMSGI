@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3 Formulario</title>
+</head>
+<body>
+    
+    <form action = "action_page.php" >
+        <h2>Información Personal</h2>
+        <label for = "fname" > Nombre: </label><br>
+        <input type= "text" id = "fname" value = "" required><br>
+        <label for = "lname" > Apellido: </label><br>
+        <input type = "text" id = "lname" name="lname" value = "" required><br><br>
+        <label for = "ffecha" > Fecha de Nacimiento: </label><br>
+        <input type = "date" id = "ffecha" name = "lfecha" value = "Fecha de Nacimiento" required><br>
+    
+        <p>Selecciona tu género:</p>
+        <input type = "radio" id = "masculino" name = "Genero" value = "masculino" required>
+        <label for = "masculino" > Masculino </label><br>
+        <input type = "radio" id = "femenino" name = "Genero" value = "femenino" required>
+        <label for = "femenino" > Femenino </label><br> 
+        <input type = "radio" id = "otro" name = "Genero" value = "otro" required>
+        <label for = "otro" > Otro </label><br>
+        <br>
+        <h2>Información de Contacto</h2>
+        <label for = "correo" > Correo electrónico:</label><br>
+        <input type = "email" id = "correo" name = "correo" value = "" required><br>
+        <br>
+        <label for ="telefono" > Número de telefono:</label><br>
+        <input type = "tel" id = "telefono" name = "telefono" value = "" required><br>
+        <br>
+        <label for = "direccion" > Direccion:</label><br>
+        <textarea></textarea>
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <p><input type="submit" value = "Enviar"></p>
+        <p>Cuando pulses enviar, la información se enviará a GRANAINFO</p>
+    </form>
+</body>
+
+</html>
