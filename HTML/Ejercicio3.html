@@ -8,7 +8,9 @@
 <body>
     
     <form action = "action_page.php" >
-        <h2>Información Personal</h2>
+        
+        <fieldset>
+        <legend><h2>Información Personal</h2></legend>
         <label for = "fname" > Nombre: </label><br>
         <input type= "text" id = "fname" value = "" required><br>
         <label for = "lname" > Apellido: </label><br>
@@ -23,24 +25,30 @@
         <input type = "radio" id = "otro" name = "Genero" value = "otro" required>
         <label for = "otro" > Otro </label><br>
         </p>
+        </fieldset>
 
-        <h2>Información de Contacto</h2>
+        <fieldset>
+        <legend><h2>Información de Contacto</h2></legend>
         <label for = "correo" > Correo electrónico:</label><br>
         <input type = "email" id = "correo" name = "correo" value = "" required><br>
         <label for ="telefono" > Número de telefono:</label><br>
         <input type = "tel" id = "telefono" name = "telefono" value = "" required><br>
         <label for = "direccion" > Direccion:</label><br>
         <textarea></textarea>
-
-        <h2>Información de Cuenta</h2>
+        </fieldset>
+        
+        <fieldset>
+        <legend><h2>Información de Cuenta</h2></legend>
         <label for = "Usuario" > Nombre de Usuario:</label><br>
         <input type = "text" id = "Usuario" name = "Usuario" value ="" required><br>
         <label for = "Contrasena" > Contraseña:</label><br>
         <input type = "password" id = "Contrasena" name = "Contrasena" value = "" required><br>
         <label for = "ConfContrasena" > Confirmar contraseña:</label><br>
         <input type = "password" id = "ConfContrasena" name = "ConfContrasena" value = "" required><br>
-        
-        <h2>Preferencias</h2>
+        </fieldset>
+
+        <fieldset>
+        <legend><h2>Preferencias</h2></legend>
         <label for = "Color" > Seleccionar un Color Favorito:</label><br>
         <input type = "radio" id = "Rojo" name = "Color" value = "Rojo">
         <label for = "Rojo" > Rojo</label><br>
@@ -54,7 +62,7 @@
         <input type = "checkbox" id = "Terminos" name = "Terminos" value = "Terminos" required>
         <label for = "Terminos" > Aceptar Términos y Condiciones</label><br>
         </p><br>
-        
+        </fieldset>
         
         
         
