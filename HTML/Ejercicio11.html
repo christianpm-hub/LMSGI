@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Windows 11" content="Preguntas Frecuentes sobre Windows 11">
+    <meta name="author" content="Christian Perez Montalban">
+    <title>Ejercicio 11</title>
+    <link rel="icon" type="image/.icon" href="https://imgs.search.brave.com/_RwVfxHUNcgsuXhRp4ry-q_PgOyhaJKs96h4fx3uWqk/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS12ZWN0/b3Ivd2luZG93cy0x/MS1sb2dvXzEyNzMz/NzUtMTUyNi5qcGc_/c2VtdD1haXNfaHli/cmlkJnc9NzQwJnE9/ODA">
+</head>
+<header>
+        <h1>Preguntas Frecuentes</h1>
+</header>
+<body>
+    <main>
+        <details>
+            <summary>¿Cómo se cambia el nombre en Windows 11?</summary>
+            <p>Para cambiar el nombre de tu equipo en Windows 11, accede a la configuración, ve a Sistema y selecciona "Acerca de". Allí, haz clic en "Cambiar el nombre de esta PC" y escribe el nuevo nombre que deseas asignarle al dispositivo.
+            Este cambio afecta el nombre que aparece en la red local y en servicios de Microsoft, y requiere reiniciar el equipo para que los cambios surtan efecto.</p>
+
+            <p>Para cambiar el nombre de usuario visible en la pantalla de inicio de sesión, que está vinculado a tu cuenta de Microsoft, debes acceder a la configuración de tu cuenta desde el menú de inicio. Haz clic en tu nombre e imagen de perfil, selecciona "Cambiar la configuración de la cuenta", luego "Administrar mi cuenta de Microsoft" y navega a "Tu información" en la página web de Microsoft. Allí, pulsa en "Editar nombre", introduce el nuevo nombre y apellido, resuelve el CAPTCHA y guarda los cambios.
+            Este nombre se reflejará en todos los servicios de Microsoft, como Xbox o Outlook, y requiere reiniciar el equipo para que se actualice.</p>
+
+            <p>Es importante destacar que este proceso solo cambia el nombre visible y no la carpeta de usuario en la unidad C:, que conserva su nombre original.
+            Si no estás conectado a una cuenta de Microsoft, puedes cambiar el nombre de la cuenta desde el Panel de Control, seleccionando "Cuentas" y luego "Cambiar el nombre de la cuenta"</p>
+        </details><br>
+
+        <details>
+            <summary>¿Cómo se pone IP estática en Windows 11?</summary>
+                <p>Configurar una dirección IP estática en Windows 11 puede ser útil para mantener una conexión de red estable, especialmente para tareas como compartir archivos, acceder a impresoras o reenviar puertos.
+                Existen varios métodos para realizar esta configuración, incluyendo la aplicación Configuración, el Símbolo del sistema, PowerShell y el Panel de control.</p>
+
+                <p>Uno de los métodos más directos es usar la aplicación Configuración de Windows 11. Para ello, abre Configuración, ve a Red e Internet, y selecciona la conexión Wi-Fi o Ethernet que deseas configurar. En la sección "Asignación de IP", haz clic en el botón Editar, selecciona la opción Manual y activa el interruptor IPv4. Luego, ingresa tu dirección IP preferida, la máscara de subred, la puerta de enlace predeterminada y las direcciones DNS preferida y alternativa si es necesario.
+                También puedes configurar el cifrado de consultas DNS sobre HTTPS según tus necesidades.</p>
+
+                <p>Otra opción es usar PowerShell. Abre PowerShell como administrador y ejecuta el comando Get-NetIPConfiguration para revisar la configuración actual de tu red.
+                Luego, establece la IP estática con el comando New-NetIPAddress -InterfaceIndex 10 -IPAddress 10.1.4.119 -PrefixLength 24 -DefaultGateway 10.1.4.1, asegurándote de ajustar el InterfaceIndex y los valores de IP, máscara y puerta de enlace según tu red.
+                Para configurar los servidores DNS, usa Set-DnsClientServerAddress -InterfaceIndex 10 -ServerAddresses 10.1.4.1 y puedes agregar un DNS secundario con una coma.</p>
+
+                <p>El Símbolo del sistema también permite esta configuración. Abre el Símbolo del sistema como administrador, ejecuta ipconfig /all para identificar tu adaptador y sus detalles de red.
+                Luego, usa el comando netsh interface ip set address name="Ethernet0" static 10.1.4.119 255.255.255.0 10.1.4.1, reemplazando "Ethernet0" con el nombre correcto de tu adaptador y ajustando los valores de IP, máscara y puerta de enlace.
+                Para DNS, utiliza netsh interface ip set dns name="Ethernet0" static 10.1.4.1 y añade un DNS secundario con netsh interface ip add dns name="Ethernet0" 8.8.8.8 index=2.</p>
+
+                <p>Si prefieres el Panel de control, abre el Panel de control, ve a Red e Internet > Centro de redes y recursos compartidos, y selecciona Cambiar configuración del adaptador. Haz clic derecho en el adaptador de red deseado, selecciona Propiedades, luego Protocolo de Internet versión 4 (TCP/IPv4) y haz clic en Propiedades. Activa "Usar la siguiente dirección IP" y completa los campos con la IP, máscara de subred, puerta de enlace y servidores DNS.</p>
+
+               <p>También es posible configurar una IP estática para una red Wi-Fi específica mediante la opción de configuración avanzada en la configuración de red, donde puedes seleccionar "Estática" en el menú desplegable de Configuración IP.</p>
+                Para confirmar que la configuración fue exitosa, puedes probar la conectividad con el comando ping bing.com o intentar acceder a un sitio web.
+        </details><br>
+
+        <details>
+            <summary>¿Cómo actualizar a Windows 11?</summary>
+            <p>Para actualizar a Windows 11, primero debes verificar que tu dispositivo cumpla con los requisitos mínimos del sistema utilizando la herramienta PC Health Check de Microsoft.
+            Es fundamental hacer una copia de seguridad de tus datos importantes antes de comenzar el proceso.<br>
+            
+            Si tu equipo ejecuta Windows 10, puedes actualizar a Windows 11 de forma gratuita mediante Windows Update: ve a Configuración > Actualización y seguridad > Windows Update y busca actualizaciones; si está disponible, verás una notificación indicando que Windows 11 está lista para instalar, y podrás hacer clic en "Descargar e instalar".
+            Si no aparece la notificación, puedes usar el Asistente de instalación de Windows 11 descargado desde el sitio oficial de Microsoft para iniciar la actualización de forma manual.
+            
+            Este proceso puede tardar algún tiempo, y tu dispositivo se reiniciará varias veces durante la instalación.
+            Para usuarios que ya tienen Windows 11, como la versión 24H2, se puede actualizar a la versión 25H2 siguiendo pasos específicos, incluyendo la descarga de la ISO oficial desde Microsoft, montarla y ejecutar setup.exe, eligiendo la opción de conservar archivos y aplicaciones.</p>
+        </details>
+    </main>
+</body>
+</html>
