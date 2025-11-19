@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        #gallery-section{
+            background-color: black;
+        }
+
+        #gallery-section .section-title {
+            padding: 10px 10px;
+            text-align: center;
+            font-size: 2rem;
+            color: white;
+        }
+
+        #gallery-section .gallery-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            gap: 32px;
+
+        }
+        
+        #gallery-section .gallery-list .gallery-item{
+            color: white;
+            justify-content: center;
+            width: calc(100%/3 - 32px);
+            text-align: center;
+        }
+
+
+        #gallery-section .gallery-list .gallery-item .gallery-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 8px;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <section id="gallery-section">
+        <h2 class="section-title"> Nuestros Productos</h2>
+        <div class="gallery-list">
+            <div class="gallery-item">
+                <img class="gallery-image" src="images//cold-beverages.png" alt="batidos" >
+                <h3>Batidos</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis porro, voluptatem, deleniti corrupti dolor quasi cum quia excepturi dolore nesciunt laboriosam? Libero, eveniet animi! Culpa earum corrupti modi? Velit, dolorem.</p>
+
+            </div>
+
+            <div class="gallery-item">
+                <img class="gallery-image" src="images/desserts.png" alt="helado de fresas" >
+                <h3>Helado de Fresas</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores quia voluptas unde accusantium, nihil iste quis officiis obcaecati rerum voluptatibus. Explicabo similique quisquam repellendus mollitia qui! Pariatur, reprehenderit? Perspiciatis, beatae.</p>
+            </div>
+
+            <div class="gallery-item">
+                <img class="gallery-image" src="images/hot-beverages.png" alt="cafe" >
+                <h3>Cafe</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur harum ipsa quisquam, quaerat qui delectus velit modi. Aut modi cumque, suscipit animi totam deleniti dolor voluptas nulla, perspiciatis nam a?</p>
+            </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
