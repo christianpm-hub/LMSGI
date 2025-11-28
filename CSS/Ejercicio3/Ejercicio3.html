@@ -3,92 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="coffee-hero-section.png">
-    <title>Ejercicio 3</title>
+    <link rel="icon" href="images/coffee-hero-section.png">
+    <title>Coffee</title>
     <style>
         *{
-            margin: 0;
-            padding: 0;
-        }
-        nav{
-            background-image: url(photo-1614850523011-8f49ffc73908.jpg);
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        nav img{
-            padding-left: 15px;
-        }
-        .nav-list{
-            display: flex;
-            flex-direction: row;
-            list-style-type: none;
-            gap: 2px;
-            padding-right: 5px;
-        }
-
-        .nav-list a {
-            text-decoration: none;
-            color: white;
-            font-size: 20px;
-            padding: 25px 15px;
-            font-weight: bold;
+            padding: 0px 0px;
         }
         
-        .nav-list a:hover{
-            color: white;
-        }
-        .cta-container{
-            background-image: url(photo-1614850523011-8f49ffc73908.jpg);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-attachment: scroll;
-            background-size: cover;
-            text-align: center;
-            
+        .nav-list{
+            background-color:sienna;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
 
-            height: 100vh;
+        }
+
+        .nav-list .nav-list-icon{
+            color: white;
+            font-weight: bold;
             display: flex;
             align-items: center;
-            justify-content: center;
-            flex-direction: column;
         }
 
-        .cta-text{
-            color:white;
-            font-size: 28px;
+        .nav-list .nav-list-icon img{
+            height: 5vh;
+            padding-left: 10px;
+        }
+        
+        .nav-list .nav-list-icon p{
+            padding-left: 10px;
+            font-size: 18px;
+            font-family: 'Times New Roman';
+        }
+
+        .nav-list .nav-list-elements{
+            display: flex;
+            gap: 12px;
+            list-style-type: none;
+            padding-right: 10px;
+        }
+
+        .nav-list-elements a{
+            color: white;
+            text-decoration: none;
             font-weight: bold;
-
+            font-size: 18px;
         }
-        .cta-button{
+
+        .home{
+            background-image: url(images/411b77874cb8eb3b322579925dcfc96d.jpeg);
+            background-repeat: no-repeat;
+            background-position: center;
+            padding-top: 15%;
+            padding-bottom: 15%;
+            text-align:end;
+           
+        }
+
+        .home .home-welcome{
+            color: white;
+            font-size: 45px;
+            font-family:cursive;
+            font-weight: bold;
+            padding-right: 40px;
+            opacity: 90%;
+        }
+
+        .home .home-description{
+            color: white;
+            font-size: 25px;
+            font-family:cursive;
+            font-weight: bold;
+            padding-right: 150px;
+        }
+
+        .home .home-button{
+            padding-right: 160px;
+        }
+
+        .home-button button{
+            background-color: sienna;
+            border-color: black;
             border-radius: 10px;
-            background-color:aquamarine;
-            color: black;
-            font-weight: bold;
-            padding: 15px 30px;
-            font-size: 20px;
-            cursor: pointer;
-            border:none;
-            text-transform: uppercase;
-            
         }
+
+        .home-button a{
+            font-weight: bold;
+            color: white;
+            font-size: 30px;
+            text-decoration: none;
+            padding: 45px 45px;
+            padding-right: 40px;
+        }
+
+
+        
+
     </style>
 </head>
 <body>
-     <nav>
-        <img src="icons8-css-logo-240.png" alt="foto de cafe" width="50" height="50">
-        <ul class="nav-list">
+    <nav class="nav-list">
+        <div class="nav-list-icon">
+            <img src="images/hot-beverages.png" alt="Taza con cafe">
+            <p>Coffee</p>
+        </div>
+        
+        <ul class="nav-list-elements">
             <li><a href="#Home" > Home</a></li>
-            <li><a href="#About" > About</a></li>
-            <li><a href="#Services" > Services</a></li>
+            <li><a href="#Gallery" > Gallery</a></li>
+            <li><a href="#About" > About Us</a></li>
             <li><a href="#Contact" > Contact</a></li>
         </ul>
     </nav>
-   <div class="cta-container">
-        <h2 class="cta-text">¡Aprovecha nuestra oferta especial!</h2>
-        <p  class="cta-text">Hasta un 40% de descuento en productos seleccionados.</p>
-        <button class="cta-button">Descubrir Ofertas</button>
-    </div>
-   
+
+    <main>
+        <div class="home" id="Home">
+            <p class="home-welcome">Welcome to Coffee</p>
+            <p class="home-description">Enjoy the time</p>
+            <div class="home-button">
+                <button type="button"><a href="#Contact" > Contact Us</a></button>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
