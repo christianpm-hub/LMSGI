@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee</title>
+    <style>
+        *{
+            padding: 0px 0px;
+        }
+        
+        .nav-list{
+            background-color:sienna;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        .nav-list .nav-list-icon{
+            color: white;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-list .nav-list-icon img{
+            height: 5vh;
+            padding-left: 10px;
+        }
+        
+        .nav-list .nav-list-icon p{
+            padding-left: 10px;
+            font-size: 18px;
+            font-family: 'Times New Roman';
+        }
+
+        .nav-list .nav-list-elements{
+            display: flex;
+            gap: 12px;
+            list-style-type: none;
+            padding-right: 10px;
+        }
+
+        .nav-list-elements a{
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .home{
+            background-image: url(images/411b77874cb8eb3b322579925dcfc96d.jpeg);
+            background-repeat: no-repeat;
+            background-position: center;
+            padding-top: 10%;
+            padding-bottom: 15%;
+            text-align:end;
+           
+        }
+
+        .home .home-welcome{
+            color: white;
+            font-size: 45px;
+            font-family:cursive;
+            font-weight: bold;
+            padding-right: 40px;
+            opacity: 90%;
+        }
+
+        .home .home-description{
+            color: white;
+            font-size: 25px;
+            font-family:cursive;
+            font-weight: bold;
+            padding-right: 150px;
+        }
+
+        .home .home-button{
+            padding-right: 140px;
+        }
+
+        .home-button button{
+            background-color: sienna;
+            border-color: black;
+            border-radius: 10px;
+        }
+
+        .home-button a{
+            font-weight: bold;
+            color: white;
+            font-size: 30px;
+            text-decoration: none;
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+
+        #gallery-section .section-title {
+            padding: 10px 10px;
+            text-align: center;
+            font-size: 2rem;
+        }
+
+        #gallery-section .gallery-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            gap: 32px;
+
+        }
+        
+        #gallery-section .gallery-list .gallery-item{
+            width: calc(100%/3 - 32px);
+        }
+        #gallery-section .gallery-list .gallery-item .gallery-image {
+            width: 100%;
+            height: 100%;
+            border-radius: 8px;
+        }
+        
+        #menu-section {
+            background-color: sienna;
+            padding-bottom: 40px;
+        }
+
+        #menu-section .section-title {
+            padding: 10px 10px;
+            text-align: center;
+            font-size: 2rem;
+            color: white;
+        }
+
+        #menu-section .gallery-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            gap: 32px;
+
+        }
+
+        #menu-section .gallery-list .gallery-item {
+            color: white;
+            justify-content: center;
+            width: calc(100%/3 - 32px);
+            text-align: center;
+            font-family: 'Segoe UI';
+        }
+
+
+        #menu-section .gallery-list .gallery-item .gallery-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 8px;
+            justify-content: center;
+        }
+
+        .footer {
+            display:flex;
+            justify-content:space-between;
+            padding: 20px 20px;
+            padding-left: 130px;
+            padding-right: 130px;
+            background-color: black;
+            
+        }
+
+        .footer a{
+            color: white;
+            text-decoration: none;
+            list-style-type: none;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="nav-list">
+        <div class="nav-list-icon">
+            <img src="images/hot-beverages.png" alt="Taza con cafe">
+            <p>Coffee</p>
+        </div>
+        
+        <ul class="nav-list-elements">
+            <li><a href="#Home" > Home</a></li>
+            <li><a href="#gallery-section" > Gallery</a></li>
+            <li><a href="#menu-section" > Menu</a></li>
+            <li><a href="#contact" > Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="home" id="Home">
+            <p class="home-welcome">Welcome to Coffee</p>
+            <p class="home-description">Enjoy the time</p>
+            <div class="home-button">
+                <button type="button"><a href="#Contact" > Contact Us</a></button>
+            </div>
+        </div>
+    </main>
+    <section id="gallery-section">
+        <h2 class="section-title"> Galeria de imagenes</h2>
+        <div class="gallery-list">
+            <div class="gallery-item">
+                <img class="gallery-image" src="images/gallery-1.jpg" alt="taza de cafe" >
+            </div>
+
+            <div class="gallery-item">
+                <img class="gallery-image" src="images/gallery-2.jpg" alt="plato con huevos" >
+            </div>
+
+            <div class="gallery-item">
+                <img class="gallery-image" src="images/gallery-3.jpg" alt="batidos" >
+            </div>
+
+            <div class="gallery-item">
+                <img class="gallery-image" src="images/gallery-4.jpg" alt="taza con plato de desayuno" >
+            </div>
+
+            <div class="gallery-item">
+                <img class="gallery-image" src="images/gallery-5.jpg" alt="plato de empanadillas" >
+            </div>
+
+            <div class="gallery-item">
+                <img class="gallery-image" src="images/gallery-6.jpg" alt="vaso de cafe con plato" >
+            </div>
+        </div>
+    </section>
+
+    <section id="menu-section">
+        <h2 class="section-title"> Nuestros Productos</h2>
+        <div class="gallery-list">
+            <div class="gallery-item">
+                <img class="gallery-image" src="images//cold-beverages.png" alt="batidos">
+                <h3>Batidos</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis porro, voluptatem, deleniti
+                    corrupti dolor quasi cum quia excepturi dolore nesciunt laboriosam? Libero, eveniet animi! Culpa
+                    earum corrupti modi? Velit, dolorem.</p>
+
+            </div>
+
+            <div class="gallery-item">
+                <img class="gallery-image" src="images/desserts.png" alt="helado de fresas">
+                <h3>Helado de Fresas</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores quia voluptas unde accusantium,
+                    nihil iste quis officiis obcaecati rerum voluptatibus. Explicabo similique quisquam repellendus
+                    mollitia qui! Pariatur, reprehenderit? Perspiciatis, beatae.</p>
+            </div>
+
+            <div class="gallery-item">
+                <img class="gallery-image" src="images/hot-beverages.png" alt="cafe">
+                <h3>Cafe</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur harum ipsa quisquam, quaerat qui
+                    delectus velit modi. Aut modi cumque, suscipit animi totam deleniti dolor voluptas nulla,
+                    perspiciatis nam a?</p>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="footer">
+        <section class="footer-coffee">
+            <a href="">2025 Coffee Shop</a>
+        </section>
+        <section class="footer-policy">
+            <a href="">Privacy Policy</a>
+            <a href="">Refund Policy</a>
+        </section>
+    </footer>
+</body>
+</html>
