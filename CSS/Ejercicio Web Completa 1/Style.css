@@ -24,12 +24,87 @@ nav .logo {
 nav ul{
     display: flex;
     font-size: 1.2em;
-    text-decoration: none;
     list-style-type: none;
     gap: 20px;
 }
 
-nav ul a{
-   list-style-type: none;
-   text-decoration: none;
+nav ul .a-home {
+   text-decoration-color: #007bff;
+   text-decoration-thickness: 3px;
+   text-underline-offset: 20px;
+}
+
+nav ul .a-about {
+   text-decoration-color: #32cd32;
+   text-decoration-thickness: 3px;
+   text-underline-offset: 20px;
+}
+
+nav ul .a-services {
+   text-decoration-color: #8a2be2;
+   text-decoration-thickness: 3px;
+   text-underline-offset: 20px;
+}
+
+nav ul .a-contact {
+   text-decoration-color: #ffd747;
+   text-decoration-thickness: 3px;
+   text-underline-offset: 20px;
+}
+
+nav ul a:hover{
+    font-weight: bold;
+    text-decoration-color: #007bff;
+}
+
+.cta-container{
+    background-color: #e9ecef;
+    padding-top: 110px;
+    text-align: center;
+    padding-bottom: 110px;
+}
+
+.cta-container h1{
+    font-size: 2.2em;
+}
+
+.cta-container p{
+    width: 550px;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: auto;
+}
+
+.services-container {
+    background-color: #f1f3f5;
+    padding-top: 34px;
+    padding-bottom: 34px;
+    display: flex;    
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.services-container div{
+    width: 30%;
+}
+
+.services-container-icon {
+    font-size: 2em;
+    margin: auto;
+    padding-bottom: 12px;
+}
+
+.services-container p{
+    padding-top: 8px;
+}
+
+.contact-container {
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.contact-container label{
+    display: grid;
+    grid-template-columns: 1fr;
 }
