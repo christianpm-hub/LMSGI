@@ -102,9 +102,84 @@ nav ul a:hover{
 .contact-container {
     background-color: #f8f9fa;
     text-align: center;
+    padding-bottom: 60px;
+    
 }
 
 .contact-container label{
     display: grid;
     grid-template-columns: 1fr;
+    font-weight: bold;
+    font-size: 12px;
 }
+
+.contact-container input, textarea{
+    background-color: #f1f3f5;
+}
+.contact-container form input:hover{
+    border-bottom-color: #007bff;
+    border-width: 4px;
+}
+
+.contact-container form textarea:hover{
+    border-bottom-color: #007bff;
+    border-width: 4px;
+}
+
+.contact-container .name{
+    width: 500px;
+    height: 30px;
+    text-decoration-line:underline ;
+    
+    border-top: none;
+    border-right: none ;
+    border-left: none ;
+    border-bottom-color: #32cd32;
+    border-width: 4px;
+    
+}
+
+.contact-container .email{
+    width: 500px;
+    height: 30px;
+    text-decoration-line:underline ;
+    
+    border-top: none;
+    border-right: none ;
+    border-left: none ;
+    border-bottom-color: #8a2be2;
+    border-width: 4px;
+    
+}
+
+.contact-container .message{
+    width: 500px;
+    height: 30px;
+    text-decoration-line:underline ;
+    
+    border-top: none;
+    border-right: none ;
+    border-left: none ;
+    border-bottom-color: #ffd747;
+    border-width: 4px;
+    
+}
+
+.contact-container textarea{
+    width: 500px;
+    height: 30px;
+    
+}
+
+.contact-container button{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 500px;
+    height: 30px;
+    align-items: center;
+    background-color:  #007bff;
+    color:  white;
+    margin-top: 10px;
+}
+
