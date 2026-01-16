@@ -1,9 +1,13 @@
+
+/*---- SECCIÓN GENERAL ----*/
 * {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     color: #343a40;
 }
+
+/*---- SECCIÓN NAV ----*/
 
 nav {
     background-color: #f8f9fa;
@@ -57,6 +61,7 @@ nav ul a:hover{
     text-decoration-color: #007bff;
 }
 
+/*---- SECCIÓN CTA-CONTAINER ----*/
 .cta-container{
     background-color: #e9ecef;
     padding-top: 110px;
@@ -75,6 +80,7 @@ nav ul a:hover{
     margin: auto;
 }
 
+/*---- SECCIÓN SERVICES-CONTAINER  ----*/
 .services-container {
     background-color: #f1f3f5;
     padding-top: 34px;
@@ -99,11 +105,15 @@ nav ul a:hover{
     padding-top: 8px;
 }
 
+/*---- SECCIÓN CONTACT-CONTAINER ----*/
 .contact-container {
     background-color: #f8f9fa;
-    text-align: center;
     padding-bottom: 60px;
-    
+    text-align: center;
+}
+
+.contact-container h2{
+    padding-bottom: 15px;
 }
 
 .contact-container label{
@@ -111,10 +121,13 @@ nav ul a:hover{
     grid-template-columns: 1fr;
     font-weight: bold;
     font-size: 12px;
+    text-align: left;
+    padding-left: 422px;
 }
 
 .contact-container input, textarea{
     background-color: #f1f3f5;
+    padding-left: 200px;
 }
 .contact-container form input:hover{
     border-bottom-color: #007bff;
@@ -130,45 +143,41 @@ nav ul a:hover{
     width: 500px;
     height: 30px;
     text-decoration-line:underline ;
-    
     border-top: none;
     border-right: none ;
     border-left: none ;
     border-bottom-color: #32cd32;
     border-width: 4px;
-    
+    margin-bottom: 10px;
 }
 
 .contact-container .email{
     width: 500px;
     height: 30px;
     text-decoration-line:underline ;
-    
     border-top: none;
     border-right: none ;
     border-left: none ;
     border-bottom-color: #8a2be2;
     border-width: 4px;
-    
+    margin-bottom: 10px;
 }
 
 .contact-container .message{
     width: 500px;
-    height: 30px;
+    height: 80px;
     text-decoration-line:underline ;
-    
     border-top: none;
     border-right: none ;
     border-left: none ;
     border-bottom-color: #ffd747;
     border-width: 4px;
-    
+    margin-bottom: 10px;
 }
 
 .contact-container textarea{
     width: 500px;
     height: 30px;
-    
 }
 
 .contact-container button{
@@ -181,5 +190,25 @@ nav ul a:hover{
     background-color:  #007bff;
     color:  white;
     margin-top: 10px;
+    cursor: pointer;
 }
 
+.contact-container button:hover{
+    background-color: #343a40;
+}
+
+/*---- SECCIÓN FOOTER ----*/
+footer{
+    background-color: #f1f3f5;
+    padding: 20px;
+    text-align: center;
+}
+
+footer h3{
+    font-weight: bold;
+}
+
+footer a{
+    text-decoration: none;
+    font-size: 2em;
+}
