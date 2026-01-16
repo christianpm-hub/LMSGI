@@ -205,7 +205,7 @@ footer{
     text-align: center;
 }
 
-footer h3{
+footer h3, small{
     font-weight: bold;
 }
 
