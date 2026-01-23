@@ -8,6 +8,8 @@
   --dark-blue: #143548; /* Azul oscuro */
   --background-light: #ffebd9; /* Crema */
   --hover-light: #CCB299; /* Marrón */
+  color: white;
+  margin: 0;
 }
 
 .poppins-light {
@@ -16,6 +18,33 @@
   font-style: normal;
 }
 
+
+/*----- HEADER -----*/
+header{
+    background-color:var(--dark-blue);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .menu{
+    display: flex;
+    list-style-type: none;
+     gap: 20px;
+}
+
+header .menu a{
+    text-decoration: none;
+    
+}
+
+/*----- CTA-CONTAINER -----*/
+.cta-container{
+    padding-top: 1400px;
+    background-repeat: repeat;
+    background-position: center;
+    background-image: url(gato\ fondo.jpg);
+}
 /*----- HOVER COLOR -----*/
 a:hover{
     color: var(--hover-light);
@@ -33,4 +62,6 @@ input:focus{
 input{
     border-radius: 4px;
 }
+
+
 
