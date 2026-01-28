@@ -111,9 +111,6 @@ header button{
     grid-template-columns: 4fr;
 }
 
-.footer-menu div{
-    
-}
 /*----- EFECTS -----*/
 a:hover{
     color: var(--hover-light);
