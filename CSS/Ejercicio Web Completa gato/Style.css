@@ -8,7 +8,7 @@
   --dark-blue: #143548; /* Azul oscuro */
   --background-light: #ffebd9; /* Crema */
   --hover-light: #CCB299; /* Marrón */
-  color: white;
+  color: var(--background-light);
   margin: 0;
 }
 
@@ -18,40 +18,118 @@
   font-style: normal;
 }
 
-
 /*----- HEADER -----*/
 header{
     background-color:var(--dark-blue);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 5px;
 }
 
 header .menu{
     display: flex;
     list-style-type: none;
-     gap: 20px;
+    gap: 20px;
 }
 
 header .menu a{
     text-decoration: none;
-    
+}
+
+header .logo{
+    transition: transform 0.25s ease;
+}
+
+header input{
+    background-color: var(--background-light);
+    transition: transform 0.25s ease;
+    border-radius: 5px;
+    border: none;
+    padding: 7px;
+    align-items: center;
+    color: black;
+}
+
+header .lupa{
+    background-color:var(--dark-blue);
+    border: none;
+    transition: transform 0.25 ease;
+}
+
+header .search{
+    gap: 10px;
+}
+
+header button{
+    cursor: pointer;
 }
 
 /*----- CTA-CONTAINER -----*/
 .cta-container{
-    padding-top: 1400px;
-    background-repeat: repeat;
-    background-position: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    min-height: 80vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size:cover;
     background-image: url(gato\ fondo.jpg);
+    filter: sepia(30%);
 }
-/*----- HOVER COLOR -----*/
+
+.cta-container h1{
+    color: var(--primary-blue);
+    font-size: 60px;
+    font-weight: 300;
+    transition: translate 0.3 ease;
+}
+
+/*----- FOOTER COPY -----*/
+.footer-copy{
+    text-align: center;
+    background-color: var(--primary-blue);
+    padding: 12px;
+}
+
+/*----- FOOTER MENU -----*/
+.footer-menu{
+    justify-content: space-around;
+    display: flex;
+    background-color: var(--dark-blue);
+    padding: 40px;
+}
+
+.footer-menu a{
+    text-decoration: none;
+}
+
+.footer-menu div{
+    display: grid;
+    grid-template-columns: 4fr;
+}
+
+.footer-menu div{
+    
+}
+/*----- EFECTS -----*/
 a:hover{
     color: var(--hover-light);
 }
 
-button{
-    cursor: pointer;
+.logo:hover{
+    transform: rotate(360deg);
+}
+
+input:hover{
+    transform: scale(1.1);
+}
+
+.lupa:hover{
+    transform: scale(1.3);
+    color: var(--hover-light);
 }
 
 input:focus{
@@ -59,9 +137,13 @@ input:focus{
     box-shadow: 0 0 0 1px #143548;
     outline: none;
 }
-input{
-    border-radius: 4px;
+
+h1:hover{
+    
+    translate: 8px 4px ;
+    box-shadow: var(--hover-light);
 }
+
 
 
 
