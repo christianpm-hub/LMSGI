@@ -85,6 +85,7 @@ header button{
     font-size: 60px;
     font-weight: 300;
     transition: translate 0.3 ease;
+    text-shadow: 8px 4px 6px var(--hover-light);
 }
 
 /*----- FOOTER COPY -----*/
@@ -136,9 +137,7 @@ input:focus{
 }
 
 h1:hover{
-    
     translate: 8px 4px ;
-    box-shadow: var(--hover-light);
 }
 
 
