@@ -32,6 +32,13 @@ nav ul{
     gap: 20px;
 }
 
+nav button{
+    display: none;
+    margin: 0 15px;
+    background-color: none;
+    border: none;
+}
+
 nav ul .a-home {
    text-decoration-color: #007bff;
    text-decoration-thickness: 3px;
@@ -216,6 +223,14 @@ footer a{
 
 /*----- MEDIA QUERYS ----- */
 @media (max-width: 800px){
+    nav ul{
+        display: none;
+    }
+
+    nav button{
+        display: block;
+    }
+
     .services-container{
         flex-direction: column;
     }
