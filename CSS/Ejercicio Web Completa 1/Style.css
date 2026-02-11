@@ -213,3 +213,14 @@ footer a{
     text-decoration: none;
     font-size: 2em;
 }
+
+/*----- MEDIA QUERYS ----- */
+@media (max-width: 800px){
+    .services-container{
+        flex-direction: column;
+    }
+
+    .services-container div{
+        width: 100%;
+    }
+}
