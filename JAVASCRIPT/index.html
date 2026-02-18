@@ -6,13 +6,32 @@
     <title>Document</title>
 </head>
 <body>
+    <label>Peso:</label>
+    <input type="text" id="peso" >
+    <label>Altura:</label>
+    <input type="text" id="altura" >
+
+    <button onclick="imc()">Calcular</button>
+    <p id="respuesta"></p>
     <script>
-        let edad = parseInt(prompt ("Introduce la edad: "))
-        if (edad < 18){
-            alert("Eres menor de edad")
-        } else {
-            alert("Eres mayor de edad")
+       function imc(){
+        const peso = document.getElementById("peso")
+        const altura = document.getElementById ("altura")
+        const respuesta = document.getElementById("respuesta")
+        let pesopersona = peso.value
+        let alturapersona = altura.value
+        let IMC = pesopersona / (alturapersona * alturapersona)
+        if (IMC < 18.5){
+            respuesta.textContent = IMC + " Bajo peso"
+        } else if (IMC >= 18.5 && IMC <= 24.9){
+            respuesta.textContent = IMC + " Peso normal"
+        } else if (IMC >= 25 && IMC <= 29.9){
+            respuesta.textContent = IMC + " Sobrepeso"
+        } else if(IMC >= 30){
+            respuesta.textContent = IMC + " Obesidad"
         }
+        
+       }
     </script>
 </body>
 </html>
