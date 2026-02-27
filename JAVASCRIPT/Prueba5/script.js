@@ -1,4 +1,4 @@
-const numero = 5;
+const numero = Math.floor(Math.random()*10)+1;
 const button = document.getElementById('probar');
 const input = document.getElementById('intento');
 
