@@ -1,3 +1,4 @@
+/*
 let index = 0;
 const carrusel = document.getElementsByClassName('imagenes');
 const button1 = document.getElementById('boton1');
@@ -14,4 +15,24 @@ function fboton(index){
     }
     carrusel[index].style.display = 'block';
 }
+*/
 
+/*CON TIEMPO*/
+
+let diapositivaactual = 0;
+const carrusel = document.getElementsByClassName('imagenes');
+mostrarcarrusel();
+
+function mostrarcarrusel(){
+    for (let i = 0;i<carrusel.length;i++){
+        carrusel[i].style.display = 'none'
+    }
+
+    carrusel[diapositivaactual].style.display = 'block';
+    diapositivaactual++;
+
+    if(diapositivaactual >= carrusel.length){
+        diapositivaactual = 0;
+    }
+    setTimeout(mostrarcarrusel, 1000);
+}
