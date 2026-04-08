@@ -1,12 +1,21 @@
 const button = document.getElementById("agregar");
 const ul = document.getElementById("lista");
-var contador = 2;
+let contador = 2;
 
 button.addEventListener("click", añadirelemento);
 
 function añadirelemento(){
     const li = document.createElement("li");
+    const eliminar = document.createElement("button");
     contador++;
-    ul.appendChild(li);
+
+    eliminar.textContent = "eliminar";
     li.textContent = "Elemento " + contador; 
+
+    ul.appendChild(li);
+    li.appendChild(eliminar);
+
+    eliminar.addEventListener("click", function eliminarelemento(){
+        li.remove();
+    })
 }
