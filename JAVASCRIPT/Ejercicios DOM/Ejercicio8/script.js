@@ -15,6 +15,7 @@ function agregartarea(){
     lista.appendChild(li);
     li.appendChild(eliminar);
     li.appendChild(completada);
+    input.value = '';
 
     eliminar.addEventListener('click', function eliminarelemento(){
         li.remove();
@@ -27,5 +28,5 @@ function agregartarea(){
         completada.remove();
     })
 
-    input.value = '';
+    
 }
